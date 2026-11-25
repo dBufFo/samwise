@@ -50,7 +50,7 @@ def init_db():
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS rewards_catalog (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT NOT NULL,
+        name TEXT UNIQUE NOT NULL,
         stamps_cost INTEGER NOT NULL,
         category TEXT DEFAULT 'Cafetería',
         active INTEGER DEFAULT 1
