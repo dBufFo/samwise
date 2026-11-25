@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: pasaporte-primavera-backend
+    name: samwise-backend
     env: python
     region: oregon
     plan: free
